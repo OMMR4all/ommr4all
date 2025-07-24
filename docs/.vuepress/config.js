@@ -4,6 +4,7 @@ import {viteBundler} from '@vuepress/bundler-vite'
 
 export default defineUserConfig({
     lang: 'en-US',
+    base: 'https://ommr4all.github.io/ommr4all/',
 
     title: 'OMMR4all',
     description: 'Automatic Transcription of Medieval Music Manuscripts',
