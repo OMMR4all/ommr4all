@@ -1,1 +1,1 @@
-export const siteData = JSON.parse("{\"base\":\"/https://ommr4all.github.io/ommr4all/\",\"lang\":\"en-US\",\"title\":\"OMMR4all\",\"description\":\"Automatic Transcription of Medieval Music Manuscripts\",\"head\":[],\"locales\":{}}")
+export const siteData = JSON.parse("{\"base\":\"/ommr4all/\",\"lang\":\"en-US\",\"title\":\"OMMR4all\",\"description\":\"Automatic Transcription of Medieval Music Manuscripts\",\"head\":[],\"locales\":{}}")
