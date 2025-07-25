@@ -24,5 +24,5 @@ features:
   details: each module (detection, transcription, correction) can be used independently and integrated into your own workflows.
 
 
-footer: MIT Licensed | Copyright © 2025 OMMR4all
+footer: MIT Licensed | Copyright © 2025 OMMR4all | [Impressum](https://www.uni-wuerzburg.de/sonstiges/impressum/)
 ---
