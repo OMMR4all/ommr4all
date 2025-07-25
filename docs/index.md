@@ -1,7 +1,7 @@
 ---
 home: true
 title: OMMR4all
-heroImage: /assets/ommr.png
+heroImage: /images/ommr.png
 heroText: Optical Medieval Music Recognition for All
 tagline: A modular pipeline for the automatic transcription of medieval music notation
 actions:
@@ -21,7 +21,7 @@ features:
   details: It is optimized for square notation and suited for other notations.
 
 - title: Modular and Open Source
-  details: Each module (detection, transcription, correction) can be used independently and integrated into your own workflows.
+  details: each module (detection, transcription, correction) can be used independently and integrated into your own workflows.
 
 
 footer: MIT Licensed | Copyright © 2025 OMMR4all

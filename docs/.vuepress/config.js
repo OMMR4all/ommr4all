@@ -4,13 +4,13 @@ import {viteBundler} from '@vuepress/bundler-vite'
 
 export default defineUserConfig({
     lang: 'en-US',
-    base: 'ommr4all/',
+    base: '/ommr4all/',
 
     title: 'OMMR4all',
     description: 'Automatic Transcription of Medieval Music Manuscripts',
 
     theme: defaultTheme({
-        logo: '',
+        logo: '/images/ommr.png',
 
         navbar: ['/', '/guide/get-started', '/guide/workflow-overview', 'guide/local-use'],
 
