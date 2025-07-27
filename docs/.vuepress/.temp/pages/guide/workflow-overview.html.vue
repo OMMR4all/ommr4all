@@ -23,23 +23,18 @@ The top toolbar provides access to the four main annotation steps: <strong>Staff
 <h2 id="staff-line-annotation" tabindex="-1"><a class="header-anchor" href="#staff-line-annotation"><span>Staff Line Annotation</span></a></h2>
 <h3 id="automatic-detection" tabindex="-1"><a class="header-anchor" href="#automatic-detection"><span>Automatic Detection</span></a></h3>
 <p>Click on the first button in the staff lines part of the top menu.
-OMMR4all attempts to detect staff lines based on the configured number of lines per system. Detected lines appear as dark blue paths over the image.
-<img src="@source/images/workflow/automaticstaffline.gif" alt="Automatic Staff Line Detection"></p>
+OMMR4all attempts to detect staff lines based on the configured number of lines per system. Detected lines appear as dark blue paths over the image.</p>
+<p><img src="@source/images/workflow/automaticstaffline.gif" alt="Automatic Staff Line Detection"></p>
 <h3 id="manual-line-correction-and-annotation" tabindex="-1"><a class="header-anchor" href="#manual-line-correction-and-annotation"><span>Manual Line Correction and Annotation</span></a></h3>
+<p><img src="@source/images/workflow/editstaffline.gif" alt="Edit Staff Line"></p>
 <p>You can correct or add lines by selecting a line and adjusting its control points. New lines are drawn point by point and confirmed with <code v-pre>Enter</code>. To cancel, press <code v-pre>Esc</code>, <code v-pre>Backspace</code>, or <code v-pre>Delete</code>.</p>
-<p>Proper line placement is crucial since all symbol recognition relies on the positioning of staff lines — not the layout zones.</p>
+<p>Proper line placement is crucial since all symbol recognition relies on the positioning of staff lines — not the layout zones.
+If there are lines that are colliding with other elements, you can use the trim tool to cut the ends of the staff:</p>
+<p><img src="@source/images/workflow/trimstaffline.gif" alt="Trim Staff Lines"></p>
 <h3 id="grouping-single-lines-to-a-staff" tabindex="-1"><a class="header-anchor" href="#grouping-single-lines-to-a-staff"><span>Grouping Single Lines to a Staff</span></a></h3>
 <p>Detected lines are grouped into staves. You can manually group or split them. To group, draw a box over several lines. Each line belongs to exactly one staff.</p>
 <p>Grouped staves are shown in different colors. To split a group, select it and mark a region to remove. You can cancel the operation using <code v-pre>Esc</code>.</p>
-<h3 id="properties" tabindex="-1"><a class="header-anchor" href="#properties"><span>Properties</span></a></h3>
-<p>Staff lines can carry visual properties:</p>
-<ul>
-<li><strong>Bold</strong> = highlighted</li>
-<li><strong>Dashed</strong> = empty line</li>
-<li><strong>Red</strong> = detected drypoint engraving</li>
-</ul>
-<p>These can be combined as needed.</p>
-<hr>
+<p><img src="@source/images/workflow/regroupstaffline.gif" alt="Regroup Staff Line"></p>
 <h2 id="layout-annotation" tabindex="-1"><a class="header-anchor" href="#layout-annotation"><span>Layout Annotation</span></a></h2>
 <h3 id="types-of-layout-area" tabindex="-1"><a class="header-anchor" href="#types-of-layout-area"><span>Types of Layout Area</span></a></h3>
 <p>Each zone is assigned one of five types:</p>
@@ -52,6 +47,7 @@ OMMR4all attempts to detect staff lines based on the configured number of lines 
 </ul>
 <p>Zones can also be marked as <strong>Reconstructed</strong> (not visible in the scan) or <strong>Document Start</strong> (first zone of a new logical unit).</p>
 <h3 id="automatic-detection-1" tabindex="-1"><a class="header-anchor" href="#automatic-detection-1"><span>Automatic Detection</span></a></h3>
+<p><img src="@source/images/workflow/layoutdetection.gif" alt="Automatic Layout Detection"></p>
 <p>Two layout models are available:</p>
 <ul>
 <li><strong>Simple detection</strong> identifies notation and text areas.</li>
@@ -69,6 +65,7 @@ OMMR4all attempts to detect staff lines based on the configured number of lines 
 <hr>
 <h2 id="symbol-annotation" tabindex="-1"><a class="header-anchor" href="#symbol-annotation"><span>Symbol Annotation</span></a></h2>
 <h3 id="automatic-detection-2" tabindex="-1"><a class="header-anchor" href="#automatic-detection-2"><span>Automatic Detection</span></a></h3>
+<p><img src="@source/images/workflow/symboldetection.gif" alt="Automatic Symbol Detection"></p>
 <p>OMMR4all can automatically detect symbols used in medieval square notation:</p>
 <ul>
 <li>Neume elements (Normal, Oriscus, Apostropha, Liquescence up/down)</li>
@@ -84,6 +81,7 @@ OMMR4all attempts to detect staff lines based on the configured number of lines 
 </ul>
 <h3 id="manual-symbol-correction-and-annotation" tabindex="-1"><a class="header-anchor" href="#manual-symbol-correction-and-annotation"><span>Manual Symbol Correction and Annotation</span></a></h3>
 <p>You can insert a symbol by selecting a type and clicking on the image. Moving symbols updates their color automatically.</p>
+<p><img src="@source/images/workflow/createnewsymbol.gif" alt="Trim Staff Lines"></p>
 <p>To prevent automatic logical linking when placing a new symbol, hold <code v-pre>Shift</code>. Otherwise, notes are grouped into neumes automatically. You can also:</p>
 <ul>
 <li>Move symbols via drag and drop</li>
@@ -95,6 +93,9 @@ OMMR4all attempts to detect staff lines based on the configured number of lines 
 <ul>
 <li><strong>Logical connections</strong> (dashed lines) define neume groupings. You can toggle the <code v-pre>Start of neume</code> property or remove connections with the separation tool.</li>
 <li><strong>Graphical connections</strong> (solid lines) indicate visual closeness and can be toggled with the <code v-pre>Connected</code> checkbox.</li>
+</ul>
+<p><img src="@source/images/workflow/graphicalconnection.gif" alt="Edit Graphical Connection"></p>
+<ul>
 <li><strong>Fixed order</strong> locks the symbol's reading order, independent of its x-position.</li>
 </ul>
 <p>An &quot;Auto insert neume starts&quot; tool assigns <code v-pre>Start of neume</code> to all unlinked symbols.</p>
@@ -105,31 +106,23 @@ OMMR4all attempts to detect staff lines based on the configured number of lines 
 <p>Text is associated with red or purple zones and appears in the reading order panel.</p>
 <h4 id="automatic-detection-of-text" tabindex="-1"><a class="header-anchor" href="#automatic-detection-of-text"><span>Automatic Detection of Text</span></a></h4>
 <p>An OCR model can extract text from lyric and initial zones. Detected text appears in the panel and can be edited zone by zone.</p>
+<p><img src="@source/images/workflow/automaticsyllabledetection.gif" alt="Automatical Text Transcription"></p>
 <h4 id="manual-insertion" tabindex="-1"><a class="header-anchor" href="#manual-insertion"><span>Manual Insertion</span></a></h4>
 <p>Users may edit or enter text directly within zones. The system allows adding new characters or syllables to the source-wide list for reuse.</p>
 <hr>
 <h2 id="manipulating-text" tabindex="-1"><a class="header-anchor" href="#manipulating-text"><span>Manipulating Text</span></a></h2>
-<h3 id="assigning-syllables-to-neumes" tabindex="-1"><a class="header-anchor" href="#assigning-syllables-to-neumes"><span>Assigning Syllables to Neumes</span></a></h3>
-<p>Syllables can be assigned automatically or manually.</p>
-<ul>
-<li><strong>Automatic assignment</strong> places syllables based on their visual proximity to neumes or based on neume groupings.</li>
-<li><strong>Manual assignment</strong> involves selecting a syllable and clicking on the target neume. The interface then advances to the next syllable.</li>
-</ul>
-<p>Each syllable has one of three connection types:</p>
-<ul>
-<li><strong>Start of word</strong></li>
-<li><strong>Hidden connection</strong></li>
-<li><strong>Visible connection</strong></li>
-</ul>
-<p>This helps reflect musical phrasing and visual layout.</p>
-<hr>
-<h2 id="assigning-syllables-to-neumes-1" tabindex="-1"><a class="header-anchor" href="#assigning-syllables-to-neumes-1"><span>Assigning Syllables to Neumes</span></a></h2>
+<h2 id="assigning-syllables-to-neumes" tabindex="-1"><a class="header-anchor" href="#assigning-syllables-to-neumes"><span>Assigning Syllables to Neumes</span></a></h2>
 <p>This step allows syllables from the text pool to be linked to specific neumes in the music layer.</p>
 <p>Manual assignment gives the most control. You select a syllable, then click on the corresponding neume, staying within the boundaries of a text zone and neume group. The editor advances automatically through the list of syllables.</p>
 <p>Automatic assignment works in two ways:</p>
 <ul>
-<li>By detecting the closest neume to each syllable</li>
-<li>By assigning one syllable to each neume group, in sequence</li>
+<li>
+<p>By detecting the closest neume to each syllable</p>
+<p><img src="@source/images/workflow/assignsyllables.gif" alt="Syllable Assignment"></p>
+</li>
+<li>
+<p>By assigning one syllable to each neume group, in sequence</p>
+</li>
 </ul>
 <p>Both methods can be refined manually afterward.</p>
 <hr>

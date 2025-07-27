@@ -30,13 +30,19 @@ The top toolbar provides access to the four main annotation steps: **Staff Lines
 ### Automatic Detection
 Click on the first button in the staff lines part of the top menu.
 OMMR4all attempts to detect staff lines based on the configured number of lines per system. Detected lines appear as dark blue paths over the image.
+
 ![Automatic Staff Line Detection](../images/workflow/automaticstaffline.gif)
 
 ### Manual Line Correction and Annotation
 
+![Edit Staff Line](../images/workflow/editstaffline.gif)
+
 You can correct or add lines by selecting a line and adjusting its control points. New lines are drawn point by point and confirmed with `Enter`. To cancel, press `Esc`, `Backspace`, or `Delete`.
 
 Proper line placement is crucial since all symbol recognition relies on the positioning of staff lines — not the layout zones.
+If there are lines that are colliding with other elements, you can use the trim tool to cut the ends of the staff:
+
+![Trim Staff Lines](../images/workflow/trimstaffline.gif)
 
 ### Grouping Single Lines to a Staff
 
@@ -44,16 +50,7 @@ Detected lines are grouped into staves. You can manually group or split them. To
 
 Grouped staves are shown in different colors. To split a group, select it and mark a region to remove. You can cancel the operation using `Esc`.
 
-### Properties
-
-Staff lines can carry visual properties:
-- **Bold** = highlighted
-- **Dashed** = empty line
-- **Red** = detected drypoint engraving
-
-These can be combined as needed.
-
----
+![Regroup Staff Line](../images/workflow/regroupstaffline.gif)
 
 ## Layout Annotation
 
@@ -69,6 +66,8 @@ Each zone is assigned one of five types:
 Zones can also be marked as **Reconstructed** (not visible in the scan) or **Document Start** (first zone of a new logical unit).
 
 ### Automatic Detection
+
+![Automatic Layout Detection](../images/workflow/layoutdetection.gif)
 
 Two layout models are available:
 - **Simple detection** identifies notation and text areas.
@@ -92,6 +91,8 @@ Zones of the same type can be merged if they overlap. Select them and press `J` 
 
 ### Automatic Detection
 
+![Automatic Symbol Detection](../images/workflow/symboldetection.gif)
+
 OMMR4all can automatically detect symbols used in medieval square notation:
 - Neume elements (Normal, Oriscus, Apostropha, Liquescence up/down)
 - Clefs (C, F)
@@ -107,6 +108,9 @@ Symbols are assigned a position relative to the staff and are color-coded:
 
 You can insert a symbol by selecting a type and clicking on the image. Moving symbols updates their color automatically.
 
+
+![Trim Staff Lines](../images/workflow/createnewsymbol.gif)
+
 To prevent automatic logical linking when placing a new symbol, hold `Shift`. Otherwise, notes are grouped into neumes automatically. You can also:
 - Move symbols via drag and drop
 - Delete symbols with `Delete` or `Backspace`
@@ -118,6 +122,9 @@ Symbols are connected in two ways:
 
 - **Logical connections** (dashed lines) define neume groupings. You can toggle the `Start of neume` property or remove connections with the separation tool.
 - **Graphical connections** (solid lines) indicate visual closeness and can be toggled with the `Connected` checkbox.
+
+![Edit Graphical Connection](../images/workflow/graphicalconnection.gif)
+
 - **Fixed order** locks the symbol's reading order, independent of its x-position.
 
 An "Auto insert neume starts" tool assigns `Start of neume` to all unlinked symbols.
@@ -136,6 +143,8 @@ Text is associated with red or purple zones and appears in the reading order pan
 
 An OCR model can extract text from lyric and initial zones. Detected text appears in the panel and can be edited zone by zone.
 
+![Automatical Text Transcription](../images/workflow/automaticsyllabledetection.gif)
+
 #### Manual Insertion
 
 Users may edit or enter text directly within zones. The system allows adding new characters or syllables to the source-wide list for reuse.
@@ -144,21 +153,6 @@ Users may edit or enter text directly within zones. The system allows adding new
 
 ## Manipulating Text
 
-### Assigning Syllables to Neumes
-
-Syllables can be assigned automatically or manually.
-
-- **Automatic assignment** places syllables based on their visual proximity to neumes or based on neume groupings.
-- **Manual assignment** involves selecting a syllable and clicking on the target neume. The interface then advances to the next syllable.
-
-Each syllable has one of three connection types:
-- **Start of word**
-- **Hidden connection**
-- **Visible connection**
-
-This helps reflect musical phrasing and visual layout.
-
----
 
 ## Assigning Syllables to Neumes
 
@@ -168,7 +162,13 @@ Manual assignment gives the most control. You select a syllable, then click on t
 
 Automatic assignment works in two ways:
 - By detecting the closest neume to each syllable
+  
+  ![Syllable Assignment](../images/workflow/assignsyllables.gif)
+  
+
 - By assigning one syllable to each neume group, in sequence
+ 
+
 
 Both methods can be refined manually afterward.
 
