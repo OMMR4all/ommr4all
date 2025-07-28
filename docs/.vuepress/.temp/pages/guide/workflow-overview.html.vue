@@ -7,12 +7,10 @@
 To navigate within the scanned page, you have the following options:</p>
 <ul>
 <li>
-<p>To pan (switch to different positions) use the middle mouse button or hold <code v-pre>ALT</code>/<code v-pre>Option</code> and drag the page
-<img src="@source/images/workflow/pan_1.gif" alt="Pan"></p>
+<p>To pan (switch to different positions) use the middle mouse button or hold <code v-pre>ALT</code>/<code v-pre>Option</code> and drag the page</p>
 </li>
 <li>
-<p>To zoom you can use the scroll wheel.
-<img src="@source/images/workflow/zoom.gif" alt="Zoom"></p>
+<p>To zoom you can use the scroll wheel.</p>
 </li>
 </ul>
 <h3 id="transcription-toolbar" tabindex="-1"><a class="header-anchor" href="#transcription-toolbar"><span>Transcription Toolbar</span></a></h3>

@@ -1,7 +1,7 @@
 ---
 home: true
 title: OMMR4all
-heroImage: /images/ommr.png
+heroImage: /public/ommr.png
 heroText: Optical Medieval Music Recognition for All
 tagline: A modular pipeline for the automatic transcription of medieval music notation
 actions:
