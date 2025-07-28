@@ -10,11 +10,8 @@ This guide walks you through the full OMMR4all transcription process, from page 
 Open a page in transcription view. The selected page should be shown in the center view.
 To navigate within the scanned page, you have the following options:
 * To pan (switch to different positions) use the middle mouse button or hold `ALT`/`Option` and drag the page 
-![Pan](../images/workflow/pan_1.gif)
-
 
 * To zoom you can use the scroll wheel.
-![Zoom](../images/workflow/zoom.gif)
 
 ### Transcription Toolbar 
 You have to click on the pen symbol in the top bar to access the edit tools.
