@@ -10,7 +10,7 @@ export default defineUserConfig({
     description: 'Automatic Transcription of Medieval Music Manuscripts',
 
     theme: defaultTheme({
-        logo: '/public/ommr.png',
+        logo: 'https://raw.githubusercontent.com/OMMR4all/ommr4all/refs/heads/master/docs/public/ommr.png',
 
         navbar: ['/', '/guide/get-started', '/guide/workflow-overview', 'guide/local-use'],
 
