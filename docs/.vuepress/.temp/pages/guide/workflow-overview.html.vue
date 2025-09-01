@@ -43,7 +43,7 @@ If there are lines that are colliding with other elements, you can use the trim 
 <li><strong>Folio</strong> (light blue): folio info</li>
 <li><strong>Paratexts</strong> (orange): decorations or notes</li>
 </ul>
-<p>Zones can also be marked as <strong>Reconstructed</strong> (not visible in the scan) or <strong>Document Start</strong> (first zone of a new logical unit).</p>
+<p>Zones can also be marked as <strong>Reconstructed</strong> (not visible in the scan) or <strong>Document Start</strong> (first zone of a new logical unit (chant)).</p>
 <h3 id="automatic-detection-1" tabindex="-1"><a class="header-anchor" href="#automatic-detection-1"><span>Automatic Detection</span></a></h3>
 <p><img src="@source/images/workflow/layoutdetection.gif" alt="Automatic Layout Detection"></p>
 <p>Two layout models are available:</p>

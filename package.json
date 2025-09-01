@@ -18,6 +18,8 @@
     "vuepress": "2.0.0-rc.20"
   },
   "dependencies": {
+    "@vuepress/plugin-markdown-hint": "^2.0.0-rc.112",
+    "@vuepress/plugin-markdown-include": "^2.0.0-rc.112",
     "artplayer": "^5.2.3",
     "markdown-it-html5-embed": "^1.0.0"
   }

@@ -60,7 +60,7 @@ Each zone is assigned one of five types:
 - **Folio** (light blue): folio info
 - **Paratexts** (orange): decorations or notes
 
-Zones can also be marked as **Reconstructed** (not visible in the scan) or **Document Start** (first zone of a new logical unit).
+Zones can also be marked as **Reconstructed** (not visible in the scan) or **Document Start** (first zone of a new logical unit (chant)).
 
 ### Automatic Detection
 

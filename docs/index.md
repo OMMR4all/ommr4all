@@ -7,7 +7,7 @@ tagline: A modular pipeline for the automatic transcription of medieval music no
 actions:
 
 - text: Learn More
-  link: /guide/get-started.html
+  link: /guide/getting_started/getting-started.html
   type: secondary
 - text: Try it out
   link: https://ommr4all.informatik.uni-wuerzburg.de
