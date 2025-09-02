@@ -1,7 +1,7 @@
 {
   "name": "ommr4all",
   "description": "A documentation of the tool Optical Medieval Music Recognition 4all",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "license": "MIT",
   "type": "module",
   "scripts": {
@@ -11,11 +11,11 @@
     "docs:update-package": "npx vp-update"
   },
   "devDependencies": {
-    "@vuepress/bundler-vite": "2.0.0-rc.20",
-    "@vuepress/theme-default": "2.0.0-rc.88",
+    "@vuepress/bundler-vite": "2.0.0-rc.24",
+    "@vuepress/theme-default": "2.0.0-rc.112",
     "sass-embedded": "^1.86.0",
     "vue": "^3.5.13",
-    "vuepress": "2.0.0-rc.20"
+    "vuepress": "2.0.0-rc.24"
   },
   "dependencies": {
     "@vuepress/plugin-markdown-hint": "^2.0.0-rc.112",
