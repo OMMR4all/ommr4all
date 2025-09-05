@@ -1,7 +1,7 @@
 {
   "name": "ommr4all",
   "description": "A documentation of the tool Optical Medieval Music Recognition 4all",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "license": "MIT",
   "type": "module",
   "scripts": {

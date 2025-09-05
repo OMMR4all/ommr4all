@@ -33,9 +33,15 @@ OMMR4all is designed to:
 
 
 ## Workflow ##
+Since OMMR4all is a highly complex tool, we have organized its documentation into distinct sections.
 
-Since OMMR4all is a highly complex tool, we have organized its documentation into distinct sections. For instance, the
-[Export Data](../output/output.md) section showcases features related to exporting data, while the [Training section](../training.md) provides guidance on training and fine-tuning models.
+1. [Login](../getting_started/login.md) into OMMR4all: …
+2. Upload of pages of a manuscript ([creation](../getting_started/manuscript_creation.md) and [image import](../getting_started/importing_images.md))
+3. If working in a team, [permissions](../getting_started/permissions.md) for team members can be set
+4. Automatic transcription of music pages, if a suitable model is available ([workflow](../workflow/workflow.md) overview)
+5. Manual post-correction of the transcription with an [overlay editor](../workflow/editor.md)
+    a. Without automatic transcription, the whole page must be edited, and [training](../training.md) new models from several annotated pages is supported
+6. [Export Data](../output/output.md) transcription in various formats.
 
 
 ## FAQ ##
